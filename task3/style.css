@@ -1,0 +1,290 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    color:black;
+    
+}
+body{
+    
+    background-color: aliceblue;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+}
+.logo{
+    width: 20px;
+}
+.continear{
+    width:90%;
+    margin: 2rem auto;
+}
+/* start header */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 10%;
+}
+header .navbar .title{
+    display: flex;
+    gap: 10px;
+}
+
+header .navbar nav ul{
+    display: flex;
+    gap: 20px;
+}
+header .navbar nav ul li a,header nav ul li i{
+    font-size: 20px;
+}
+
+header .navbar nav ul li a:hover,header .navbar nav ul li i:hover{
+    color: rgb(240, 12, 12);
+}
+
+header .navbar .lang_arabic{
+   color: rgb(15,77,104);
+    font-size: 20px;
+    font-weight: 600;
+}
+header .navbar .lang_arabic:hover{
+    color: red;
+}
+header .navbar a  button{
+    background-color: rgb(226, 226, 226);
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    
+
+}
+header .navbar a button:hover{
+    background-color: rgb(15,77,104);;
+    cursor: pointer;
+    
+
+}
+header .navbar .login{
+    padding-right: 20px;
+    color:rgb(15,77,104);
+}
+header .navbar a button{
+    font-weight:600;
+    font-size: 15px;
+    
+}
+header form{
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+header form select{
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+}
+header form #search{
+    width: 47%;
+    padding: 10px;
+    border-radius: 10px;
+}
+header input[type="button"]{
+    background-color: rgb(15,77,104);
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight:600;
+    font-size: 15px;
+    margin-right: 20px;
+}
+header input[type="button"]:hover{
+    background-color:rgb(226, 226, 226) ;
+    color:rgb(15,77,104);
+}
+
+header .home{
+    height: 80vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .home .content{
+    max-width: 50%;
+    /* background-color: aqua; */
+}
+header .home .content p{
+    font-size: 25px;
+    padding: 20px 0;
+}
+header .home img{
+    width:30%;
+    border-radius: 20px;
+}
+/* End header */
+/* Start main */
+
+
+
+
+main .offer .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .offer h2{
+    margin: 10px 0 0 0;
+    font-size: 30px;
+
+}
+main .offer button{
+    margin: 10px 20px 0 0;
+    background-color: rgb(15,77,104);
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+main .cards{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+main .cards .card{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main .cards .card .img{
+    position: relative;
+}
+main .cards .card .img i{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    color: rgba(0,0,0,0.5);
+    font-size: 30px;
+}
+main .cards .card .img i:hover{
+    color: red;
+    cursor: pointer;
+}
+main .cards .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .cards .card .content p{
+    font-size: 18px;
+    padding: 10px 0;
+}
+main .cards .card .content span{
+    font-size: 20px;
+    color: rgb(240, 12, 12);
+}
+main .cards .card .content .del_offer {
+    color:black;
+    font-size: 15px;
+}
+main .cards .card .content .del_offer del{
+    color:black;
+    font-size: 15px;
+}
+main .cards .card .content .gold{
+    color: gold;
+}
+main .cards .card .content .no_gold{
+    color: rgb(123, 120, 120);
+}
+main .cards .card .content .btn_add_to_cards {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+
+}
+main .cards .card .content .btn_add_to_cards button{
+    background-color: rgb(15,77,104);
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+
+}
+/* End  main */
+
+/* start  footer */
+
+footer{
+    background-color:rgb(15,77,104);  
+}
+footer .continear{
+    padding: 20px 20px 0 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start ;
+    
+}
+footer .continear .d1 .title{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px ;
+    padding-top: 20px;
+    
+}
+
+footer .continear .d1 .title p{
+    color: white;
+    font-size: 30px;
+}
+footer .continear .d1 .social ul{
+    display: flex;
+    gap: 20px;
+}
+footer .continear .d1 .social ul li i,
+footer .continear .d  ul li a{
+    color: white;
+}
+footer .continear .d{
+    margin: 10px;
+    padding-top: 20px;
+}
+footer .continear .d ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+footer .copyright{
+    height: 13%;
+    /* background-color: rgb(25, 210, 86); */
+}
+footer .copyright p{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 1rem;
+}
+/* End  footer */

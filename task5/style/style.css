@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:rgb(15,77,104);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f5f5f5; */
+}
+.parent{
+    background-color: rgb(244, 245, 246);
+}
+.parent .continer{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+.parent .continer header .navbar{
+    /* background-color: #cf8888; */
+    color: #fff;
+    padding: 10px;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.parent .continer header .navbar nav ul{
+    display: flex;  
+}
+.parent .continer header .navbar nav ul li{
+    margin:0 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+
+}
+#lang{
+    color:var(--primary-color) ;
+    font-size: 20px;
+    font-weight: 600;
+}
+.parent .continer header .navbar nav ul .uniqe{
+   color:var(--primary-color) ;
+}
+.parent .continer header .navbar .img-icons a{
+    padding: 0 5px;
+}
+.parent .continer header .searchbar{
+    /* background-color: aqua; */
+    margin-top: 10px;
+}
+.parent .continer header .searchbar form{
+    position: relative;
+}
+.parent .continer header .searchbar form select{
+    width: 25%;
+    padding:8px 30px;
+    border-radius: 8px;
+}
+.parent .continer header .searchbar form #location-icon{
+    position: absolute;
+    top: 9px; 
+    left: 8px;
+    width: 20px;
+}
+.parent .continer header .searchbar form #search{
+    width: 50%;
+    margin: 3px;
+    padding:8px 10px;
+    border-radius: 8px;
+   
+}
+.parent .continer header .searchbar form #search-icon{
+    position: absolute;
+    right: 26%;
+    top: 8px;
+    width: 20px;
+   
+}
+
+.parent .continer header .searchbar form input[type="button"]{
+    width: 15%;
+    margin-left: 7%;
+    padding:8px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.parent .continer header .searchbar form input[type="button"]:hover{
+    cursor: pointer;
+    background-color:rgba(15, 77, 104, 0.736) ;
+}
+
+/* main */
+main .side{
+    margin-top: 20px;
+    color: rgba(15, 77, 104, 0.408);
+    text-transform: capitalize;
+}
+main .side span{
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+main .about{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .about .content .title{
+   margin-bottom: 1rem;
+   text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+main .about .content p{
+    max-width: 70%;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+main .Services{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+main .Services .Service{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 2px var(--primary-color);
+    color: rgb(15,77,104);
+}
+main .Services .uniqe {
+    background-color: var(--primary-color);
+    color: white;
+}
+main .Services .Service .num{
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+main .carts{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+main .carts .cart{
+    height: 50vh;
+    background-image: url('../images/473600735_122156162594327573_5619595594658198466_n.jpg');
+    background-position: center;
+    background-size: cover;
+    border: solid 1px var(--primary-color); 
+    border-radius: 8px;
+
+}
+main .carts .cart .content{
+    background-color: rgba(238, 231, 231, 0.892);
+    /* background-color: rgba(54, 54, 54, 0.819); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin:13rem 10px 0 10px ;
+}
+main .carts .cart .content .name{
+    font-weight: 900;
+    font-size: 25px;
+}
+main .carts .cart .content ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.icon-dotted{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.icon-dotted i{
+    color: rgba(206, 206, 206, 0.804);
+    font-size: 10px;
+}
+.icon-dotted .uniqe{
+    color: var(--primary-color);
+}
+
+
+
+
+/* start  footer */
+
+footer{
+    background-color:var(--primary-color);  
+}
+footer .continear{
+    padding: 20px 20px 0 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start ;
+    
+}
+footer .continear .d1 {
+    margin-bottom: 20px ;
+    margin-left: 4rem;
+    margin-top: 0.8rem;
+    padding-top: 20px;
+    
+}
+footer .continear .d1 p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .continear .d1 .social {
+    margin-top: 30px;
+}
+footer .continear .d1 .social ul{
+    display: flex;
+    gap: 10px;
+}
+footer .continear .d1 .social ul li i
+,footer .continear .d  ul li a
+,footer .continear .d  ul li{
+    color: white;
+}
+footer .continear .d{
+    margin: 10px;
+    padding-top: 20px;
+}
+footer .continear .d ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+footer .copyright{
+    height: 13%;
+    /* background-color: rgb(25, 210, 86); */
+}
+footer .copyright p{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 1rem;
+}
+/* End  footer */
+
+@media screen and (min-width: 500px) and (max-width:900px){
+    .parent .continer header .navbar{
+        
+        flex-direction: column;
+      }
+      .parent .continer header .navbar #logo{
+          width: 200px;
+      }
+      .parent .continer header .navbar nav ul{
+          margin:10px 0; 
+         
+      }
+      .parent .continer header .navbar nav ul li{
+          margin:0 20px;
+          font-size: 25px;
+          font-weight: 600;
+      }
+      #lang{
+          margin-bottom: 10px;
+          font-size: 25px;
+          font-weight: 600;
+      }
+      main .about{
+        flex-direction: column;
+    }
+    main .about .content .title{
+        margin-top: 1rem;
+     }
+     main .about .content p{
+        max-width:  100%;
+        /* background-color: aqua; */
+        padding: 10px;
+        margin-bottom: 1rem;
+     }
+     main .about .imgs{
+       gap: 10px;
+        margin-bottom: 1rem;
+        display: flex;
+       
+     }
+     main .about .imgs .img3{
+     width:300px;
+     } 
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .parent .continer header .navbar{
+        
+      flex-direction: column;
+    }
+    .parent .continer header .navbar #logo{
+        width: 200px;
+    }
+    .parent .continer header .navbar nav ul{
+        margin:10px 0; 
+        font-size: 50px;
+    }
+    .parent .continer header .navbar nav ul li{
+        margin:0 4px;
+    }
+    #lang{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .parent .continer header .searchbar form #search{
+        width: 45%;
+    }
+    .parent .continer header .searchbar form #search-icon{
+        right: 30%;
+    }
+    .parent .continer header .searchbar form input[type="button"]{
+        width: 23%;
+        margin-left:1%;
+    }
+    main .about{
+        flex-direction: column;
+    }
+    main .about .content .title{
+        margin-top: 1rem;
+     }
+     main .about .content p{
+        max-width:  100%;
+        /* background-color: aqua; */
+        padding: 10px;
+        margin-bottom: 1rem;
+     }
+     main .about .imgs{
+       gap: 10px;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+       
+     }
+     main .about .imgs .img3{
+     width:300px;
+     } 
+     footer .continear .d1 {
+        margin-left: 1rem;
+        margin-top: 0.8rem;
+        font-size: 10px;
+        
+    }
+    footer .continear .d1 p {
+        font-size: 15px;
+    }
+    footer .continear .d1 .social {
+        margin-top: 10px;
+    }
+    footer .continear .d1 .social ul{
+        gap: 3px;
+        font-size: 10px;
+    }
+    footer .continear .d{
+        margin: 5px;
+        padding-top: 20px;
+    }
+    footer .continear .d ul{
+        gap:10px;
+        font-size: 10px;
+    }
+}
